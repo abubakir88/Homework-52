@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Rubik-300;
+  src: url(../assets/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: Rubik-300i;
+  src: url(../assets/fonts/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-400;
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik-500;
+  src: url(../assets/fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: Rubik-500i;
+  src: url(../assets/fonts/Rubik-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-600;
+  src: url(../assets/fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-600i;
+  src: url(../assets/fonts/Rubik-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-700;
+  src: url(../assets/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-700i;
+  src: url(../assets/fonts/Rubik-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-800;
+  src: url(../assets/fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-800i;
+  src: url(../assets/fonts/Rubik-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-900;
+  src: url(../assets/fonts/Rubik-Black.ttf);
+}
+
+@font-face {
+  font-family: Rubik-900i;
+  src: url(../assets/fonts/Rubik-BlackItalic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background: var(--main-bg-page, #fbf8ec);
+}
+
+.hero {
+  background-image: url(../assets/images/pattern2.png);
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    h1 {
+      color: var(--main-on-surface, #414141);
+      text-align: center;
+
+      /* Desc/Header/L */
+      font-family: Rubik-700;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 72px */
+    }
+  }
+}
