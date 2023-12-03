@@ -93,8 +93,100 @@ body {
   background: var(--main-bg-page, #fbf8ec);
 }
 
+header {
+  display: flex;
+  background-color: #fff;
+  padding: 8px 0;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  // bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .logo {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .nav-items {
+      display: flex;
+      // justify-content: space-between;
+      gap: 30px;
+      button {
+        display: flex;
+        align-items: center;
+        padding: 8px 22px;
+        border-radius: 4px;
+        background: var(--main-secondary, #70c05b);
+        color: var(--main-on-secondary, #fff);
+        text-align: center;
+
+        /* Desc/Text/S */
+        font-family: Rubik-400;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        gap: 14px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--main-secondary, #70c05b);
+
+        border-radius: 4px;
+        input {
+          background: var(--main-surface, #fff);
+          border: none;
+          padding: 8px;
+          outline: none;
+          padding-right: 60px;
+        }
+        svg {
+          padding-right: 10px;
+          width: 30px;
+        }
+      }
+      .oblaka {
+        display: flex;
+        justify-content: center;
+        max-width: 50px;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        svg {
+          cursor: pointer;
+        }
+        p {
+          color: var(--main-on-surface, #414141);
+          text-align: center;
+
+          /* Desc/Text/XS */
+          font-family: Rubik;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 18px */
+        }
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+
 .hero {
-  background-image: url(../assets/images/pattern2.png);
+  background-image: url(../assets/images/Group\ 7100.png);
   .hero-content {
     display: flex;
     align-items: center;

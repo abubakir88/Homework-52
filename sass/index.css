@@ -80,8 +80,92 @@ body {
   background: var(--main-bg-page, #fbf8ec);
 }
 
+header {
+  display: flex;
+  background-color: #fff;
+  padding: 8px 0;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav .logo a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header nav .nav-items {
+  display: flex;
+  gap: 30px;
+}
+header nav .nav-items button {
+  display: flex;
+  align-items: center;
+  padding: 8px 22px;
+  border-radius: 4px;
+  background: var(--main-secondary, #70c05b);
+  color: var(--main-on-secondary, #fff);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  gap: 14px;
+}
+header nav .nav-items label {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-secondary, #70c05b);
+  border-radius: 4px;
+}
+header nav .nav-items label input {
+  background: var(--main-surface, #fff);
+  border: none;
+  padding: 8px;
+  outline: none;
+  padding-right: 60px;
+}
+header nav .nav-items label svg {
+  padding-right: 10px;
+  width: 30px;
+}
+header nav .nav-items .oblaka {
+  display: flex;
+  justify-content: center;
+  max-width: 50px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+header nav .nav-items .oblaka svg {
+  cursor: pointer;
+}
+header nav .nav-items .oblaka p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+header nav .nav-items .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .hero {
-  background-image: url(../assets/images/pattern2.png);
+  background-image: url(../assets/images/Group\ 7100.png);
 }
 .hero .hero-content {
   display: flex;
