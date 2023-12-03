@@ -94,7 +94,7 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
 }
 header nav .logo a {
   display: flex;
@@ -121,6 +121,14 @@ header nav .nav-items button {
   line-height: 150%; /* 24px */
   gap: 14px;
 }
+header nav .nav-items button:hover {
+  background-color: transparent;
+  color: #414141;
+  transition: 0.3s;
+}
+header nav .nav-items button:hover svg path {
+  fill: #414141;
+}
 header nav .nav-items label {
   display: flex;
   align-items: center;
@@ -132,7 +140,7 @@ header nav .nav-items label input {
   border: none;
   padding: 8px;
   outline: none;
-  padding-right: 60px;
+  padding-right: 180px;
 }
 header nav .nav-items label svg {
   padding-right: 10px;
@@ -152,7 +160,7 @@ header nav .nav-items .oblaka p {
   color: var(--main-on-surface, #414141);
   text-align: center;
   /* Desc/Text/XS */
-  font-family: Rubik;
+  font-family: Rubik-400;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -163,8 +171,18 @@ header nav .nav-items .user {
   align-items: center;
   gap: 10px;
 }
+header nav .nav-items .user p {
+  color: var(--onSurface, #232323);
+  /* Desc/Text/S */
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
 
 .hero {
+  margin-top: 70px;
   background-image: url(../assets/images/Group\ 7100.png);
 }
 .hero .hero-content {
@@ -181,4 +199,168 @@ header nav .nav-items .user {
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 72px */
+}
+
+.aksiya {
+  padding-top: 80px;
+}
+.aksiya .aksiya-content .aksiya-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aksiya .aksiya-content .aksiya-title h1 {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Header/M */
+  font-family: Rubik-400;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+}
+.aksiya .aksiya-content .aksiya-title p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  cursor: pointer;
+  /* Desc/Text/S */
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.aksiya .aksiya-content .aksiya-title p:hover {
+  color: #414141;
+}
+.aksiya .aksiya-content .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.aksiya .aksiya-content .cards .card {
+  max-width: 272px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.aksiya .aksiya-content .cards .card:hover {
+  transition: 0.3s;
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+.aksiya .aksiya-content .cards .card .card-img {
+  background: url(../assets/images/card-1.png), lightgray 50%/cover no-repeat;
+  width: 272px;
+  height: 160px;
+  flex-shrink: 0;
+}
+.aksiya .aksiya-content .cards .card .card-img svg {
+  margin: 10px 10px 0px 220px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 0.5;
+  background: #f3f2f1;
+}
+.aksiya .aksiya-content .cards .card .card-img svg:hover {
+  padding: 0;
+  opacity: 1;
+  background-color: red;
+  transition: 0.3s;
+}
+.aksiya .aksiya-content .cards .card .card-img svg:hover path {
+  fill: #000;
+}
+.aksiya .aksiya-content .cards .card .card-img p {
+  display: inline-flex;
+  color: #fff;
+  font-family: Rubik-400;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #f63;
+  padding: 4px 8px;
+  margin: 60px 0px 10px 10px;
+}
+.aksiya .aksiya-content .cards .card .card-texts {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.aksiya .aksiya-content .cards .card .card-texts .price {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.aksiya .aksiya-content .cards .card .card-texts .price .price1 h2 {
+  color: #414141;
+  font-family: Rubik-400;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+.aksiya .aksiya-content .cards .card .card-texts .price .price1 p {
+  color: var(--grayscale-light, #bfbfbf);
+  /* Desc/Text/XS */
+  font-family: Rubik-400;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+.aksiya .aksiya-content .cards .card .card-texts .price .price2 h2 {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.aksiya .aksiya-content .cards .card .card-texts .price .price2 p {
+  color: var(--grayscale-light, #bfbfbf);
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+.aksiya .aksiya-content .cards .card .card-texts h5 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  max-width: 220px;
+}
+.aksiya .aksiya-content .cards .card .card-texts img {
+  padding-left: 20px;
+}
+.aksiya .aksiya-content .cards .card .card-texts button {
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70c05b);
+  color: var(--main-secondary, #70c05b);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik-400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  background-color: transparent;
+  width: 100%;
+  padding: 8px;
+}
+.aksiya .aksiya-content .cards .card .card-texts button:hover {
+  background-color: #f63;
+  color: #fff;
+  transition: 0.4s;
+  border-color: #f63;
 }/*# sourceMappingURL=index.css.map */
