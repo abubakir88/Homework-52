@@ -1,0 +1,360 @@
+@font-face {
+  font-family: Rubik-300;
+  src: url(../assets/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: Rubik-300i;
+  src: url(../assets/fonts/Rubik-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-400;
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik-500;
+  src: url(../assets/fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: Rubik-500i;
+  src: url(../assets/fonts/Rubik-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-600;
+  src: url(../assets/fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-600i;
+  src: url(../assets/fonts/Rubik-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-700;
+  src: url(../assets/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-700i;
+  src: url(../assets/fonts/Rubik-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-800;
+  src: url(../assets/fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-800i;
+  src: url(../assets/fonts/Rubik-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rubik-900;
+  src: url(../assets/fonts/Rubik-Black.ttf);
+}
+
+@font-face {
+  font-family: Rubik-900i;
+  src: url(../assets/fonts/Rubik-BlackItalic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  background-color: #fff;
+  padding: 8px 0;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  // bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    .logo {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .nav-items {
+      display: flex;
+      // justify-content: space-between;
+      gap: 30px;
+      a {
+        display: flex;
+        align-items: center;
+        padding: 8px 22px;
+        border-radius: 4px;
+        background: var(--main-secondary, #70c05b);
+        color: var(--main-on-secondary, #fff);
+        text-align: center;
+
+        /* Desc/Text/S */
+        font-family: Rubik-400;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        gap: 14px;
+        &:hover {
+          background-color: transparent;
+          color: #414141;
+          transition: 0.3s;
+          svg path {
+            fill: #414141;
+          }
+        }
+      }
+      label {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--main-secondary, #70c05b);
+
+        border-radius: 4px;
+        input {
+          background: var(--main-surface, #fff);
+          border: none;
+          padding: 8px;
+          outline: none;
+          padding-right: 180px;
+        }
+        svg {
+          padding-right: 10px;
+          width: 30px;
+        }
+      }
+      .oblaka {
+        display: flex;
+        justify-content: center;
+        max-width: 50px;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        svg {
+          cursor: pointer;
+        }
+        p {
+          color: var(--main-on-surface, #414141);
+          text-align: center;
+
+          /* Desc/Text/XS */
+          font-family: Rubik-400;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 18px */
+        }
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          color: var(--onSurface, #232323);
+
+          /* Desc/Text/S */
+          font-family: Rubik-400;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+    }
+  }
+}
+
+.images {
+  padding-top: 70px;
+  .images-content {
+    h1 {
+      color: var(--main-on-surface, #414141);
+      font-family: Rubik-400;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 96px */
+    }
+    .cards {
+      padding-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      .card-1 {
+        background-image: url(../assets/images/eggs.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 584px;
+      }
+      .card-2 {
+        background-image: url(../assets/images/breads.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-3 {
+        background-image: url(../assets/images/vegi.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-4 {
+        background-image: url(../assets/images/card-4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-5 {
+        background-image: url(../assets/images/card-5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-6 {
+        background-image: url(../assets/images/card-6.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-7 {
+        background-image: url(../assets/images/card-7.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-8 {
+        background-image: url(../assets/images/card-8.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-9 {
+        background-image: url(../assets/images/card-9.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-10 {
+        background-image: url(../assets/images/card-10.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 584px;
+      }
+      .card-11 {
+        background-image: url(../assets/images/card-11.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+      .card-12 {
+        background-image: url(../assets/images/card-12.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 584px;
+      }
+      .card-13 {
+        background-image: url(../assets/images/card-13.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 272px;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 80px;
+  height: 136px;
+  .foot {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    .s4 {
+      position: relative;
+      left: -50px;
+      top: 30px;
+    }
+    .end {
+      display: flex;
+      gap: 40px;
+      position: relative;
+      margin-left: 100px;
+      top: -12px;
+    }
+    .p4 {
+      color: var(--main-on-surface, #414141);
+      font-family: Rubik-400;
+    }
+    .end2 {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      top: -30px;
+      margin-left: 900px;
+      //   left: 900px;
+    }
+    .e3 {
+      display: flex;
+      gap: 8px;
+      position: relative;
+      top: -53px;
+      //   left: 1110px;
+      margin-left: 1110px;
+    }
+    .e4 {
+      text-align: end;
+    }
+    .p7 {
+      position: relative;
+      top: -4px;
+    }
+  }
+}
